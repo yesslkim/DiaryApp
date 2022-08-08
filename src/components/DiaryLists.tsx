@@ -22,6 +22,16 @@ const DiaryLists = () => {
 
     return(
         <section className='diary-list'>
+            <div>
+                <label htmlFor="filterList">다이어리 필터</label>
+                <select name="filterList" id="filterList">
+                    <option value="1">⭐️</option>
+                    <option value="2">⭐️⭐️</option>
+                    <option value="3">⭐️⭐️⭐️</option>
+                    <option value="4">⭐️⭐️⭐️⭐️</option>
+                    <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+                </select>
+            </div>
             <ul>
                 {
                     data && data.map((diary)=>(
