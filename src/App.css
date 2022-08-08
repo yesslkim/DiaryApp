@@ -1,0 +1,104 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.sr-only {
+  display: none;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+}
+
+/* LAYOUT */
+
+.App {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main > section {
+  width: 49%;
+  height: 100vh;
+  border: 1px solid #454545;
+}
+
+@media screen and (max-width: 745px) {
+  main > section {
+    width: 100%;
+  }
+}
+
+/* HEADER */
+.diary-header h1 {
+  padding: 40px 0;
+}
+
+/* DIARY - EDITOR */
+.diary-editor {
+  padding: 10px;
+}
+
+.diary-editor label {
+  display: inline-block;
+  min-width: 100px;
+  margin-right: 10px;
+}
+
+.diary-editor button {
+  width: 100%;
+  padding: 10px;
+}
+
+/* DIARY - LIST */
+.diary-list > div {
+  padding: 10px;
+  border-bottom: 1px solid #424242;
+  margin-bottom: 10px;
+}
+
+.diary-list-filter label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.diary-list li {
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #424242;
+}
+
+.diary-list .rate {
+  position: absolute;
+  top: 10px;
+  right: 10px
+}
+
+.diary-list .btn-delete {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
